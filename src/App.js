@@ -70,8 +70,6 @@ function App() {
   const upload = (e) => {
     e.preventDefault();
 
-    console.log(inspections);
-
     if (description && file) {
       setValidationError(false);
 
