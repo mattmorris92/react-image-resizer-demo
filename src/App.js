@@ -142,7 +142,7 @@ function App() {
               <Form.Label>Image</Form.Label>
               <Form.File
                 id="custom-file"
-                label="Custom file input"
+                label="Select Image"
                 onChange={(event) => fileChangedHandler(event)}
                 custom
               />
