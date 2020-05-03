@@ -168,7 +168,7 @@ function App() {
                 <Card.Text>{inspection.description}</Card.Text>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">Last updated: {new Date(inspection.created).toLocaleDateString("en-US")}</small>
               </Card.Footer>
             </Card>
           </CardGroup>
