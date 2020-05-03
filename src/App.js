@@ -119,7 +119,7 @@ function App() {
     <Container fluid style={{padding: '20px'}}>
       { hasSubmitted ?
       <Alert variant={uploadSuccess ? `success` : `danger`} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-        Inspection creation was successful.
+        Inspection creation was {uploadSuccess ? `successful` : `unsuccessful`}.
         <Button variant={uploadSuccess ? `outline-success` : `outline-danger`} onClick={() => setHasSubmitted(false)}>
           Close
         </Button>
