@@ -77,7 +77,7 @@ function App() {
       formData.append(`file`, file);
       formData.append('description', description);
 
-      fetch('http://74.208.182.244/inspection/upload', {
+      fetch('https://api.missionmoon.io/inspection/upload', {
         method: 'POST',
         body: formData,
       }, {mode: 'cors'})
@@ -102,7 +102,7 @@ function App() {
   }
 
   const getInspections = () => {
-    fetch('http://74.208.182.244/inspection/all', {
+    fetch('https://api.missionmoon.io/inspection/all', {
       method: 'GET'
     }, {mode: 'cors'})
       .then(response => {return response.json()})
